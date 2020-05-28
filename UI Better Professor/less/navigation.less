@@ -1,0 +1,196 @@
+
+
+header{
+    display: flex;
+    justify-content: flex-start;
+    align-items: left;
+    //background-image: url("../IMG/navbg.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 95%;
+    //element.style {
+        //visibility: visible;
+        //animation-name: billboard-scale;
+    }
+    @media @tablet {
+        width: 100%;
+        font-size: 2rem;
+        padding: 0;
+        justify-content: center;
+        padding: 0;
+      }
+    @media @mobile {
+        width: 100%;
+        font-size: 2rem;
+        padding: 0;
+        justify-content: center;
+        padding: 0 2rem;
+        
+    }
+    .imglogo{
+        
+        height: 46.17px;
+        margin-top: 2rem;
+        margin-left: 8rem;
+        @media @mobile {
+            margin-top: 2rem;
+           margin-right: 2%;
+           margin-left: 3rem;
+           margin-bottom: .5rem;
+            
+        }
+
+    }
+
+    .logo{
+        
+        margin-top: 1rem;
+        width: 100%;
+        font-size: 2.8rem;
+        padding: 2rem;
+        text-align: left;
+        @media @tablet {
+            
+           
+            width: 100%;
+            font-size: 2.8rem;
+            padding: .75rem;
+          }
+        @media @mobile {
+            margin-top: 2.5rem;
+            width: 100%;
+            font-size: 1.6rem;
+            
+            
+
+        }
+    }
+    
+
+nav {
+    margin-top: 2rem;
+    display: flex;
+    
+    padding: 2rem;
+    font-size: 100%;
+    @media @tablet {
+      margin-right: 0rem;
+    }
+    @media @mobile {
+        justify-content: center;
+        align-items: center;
+    }
+    
+        a {
+            color: @white;
+            opacity: 60%;
+            padding: 0 2rem;
+            margin: 0 4rem;
+            font-size: 1.8rem;
+            
+            @media @mobile {
+                width: 80%;
+                font-size: 1.2rem;
+                margin: 0 2rem;
+                padding: 0;
+                display: flex;
+                justify-content: flex-start;
+            }
+        }
+        a:hover{
+            color: @leaf;
+            opacity: 100%;
+        }
+
+//@media @mobile {
+ //   width: 90;
+  //  margin-bottom: 0%;
+ //lessc -v
+}
+
+
+
+//hero
+.hero{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 10rem;
+    background-image: url("../IMG/heroimg.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 500px;
+    width: 100% ;
+    .imgbig{
+        margin-left: 20%;
+        max-width: 100%;
+        height: 50%;
+        @media @mobile {
+            display: none;
+     }
+    }
+  .booksbg {
+    justify-content: flex-end;
+   
+    .titles{
+       display: flex;   
+       flex-direction: column;
+       align-items: flex-end;
+       width: 55%;
+       @media @mobile {
+           width:60%;
+           margin-left: 6rem;
+    }
+    }
+      
+       
+        .buttons{
+
+         .signup{ 
+                .buttonsignup();
+                @media @mobile {
+                
+                 margin-left: 6rem;
+               }
+            }
+
+         .login{ 
+            .buttonlogin();
+            @media @mobile {
+                   display:flex;
+                   justify-content: center;
+                   margin-left: 6rem;
+                }
+           }
+
+           @media @mobile {
+               display: flex;
+               
+                }
+            
+        h1{
+            width: 100%;
+            font-size: 4.8rem;
+            margin: 1rem 0;
+            
+            @media @mobile {
+                width: 90%;
+                font-size: 3.8rem;
+                padding: 3rem;  
+                
+            }
+          }
+        
+            
+
+            // @media @mobile
+            //     width: 80%;
+            //     margin: 4rem, 0;
+            //     font-size: 2rem;
+                
+               
+    
+
+        }
+    }
+
+    }
