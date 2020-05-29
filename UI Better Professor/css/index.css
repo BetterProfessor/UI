@@ -552,7 +552,7 @@ body .About .boxes .box img {
   border-radius: 100%;
 }
 body .About .boxes .box p {
-  padding-bottom: 0;
+  padding-bottom: 5%;
   padding-top: 0;
 }
 body .About .boxes .box p a {
