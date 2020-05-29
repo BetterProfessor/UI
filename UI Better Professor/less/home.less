@@ -21,18 +21,44 @@ body{
 
            width: 40%;
            text-align: left;
+           @media @tablet{
+            text-align: center;
+            width: 100%;
+            background-size:contain;
+        }
            @media @mobile {
             width: 100%;
             flex-direction: column;
           
         }
-        
+        p{
+            @media @tablet{
+                text-align: left;
+                
+            }
+        }
        }
+       @media @tablet{
+        flex-direction: column;
+    }
        @media @mobile {
         flex-direction: column;
     }
        
    }
+   .bookIMG{
+    height: auto;
+    width: 40%;
+    padding: 5%;
+    @media @tablet{
+        flex-direction: column;
+        margin: 0 auto;
+        width: 80%;
+    }
+       @media @mobile {
+        flex-direction: column;
+    }
+}
     .About{
         margin: 0 auto;
         width: 100%;
@@ -40,8 +66,10 @@ body{
         flex-direction: column;
         
         img{
-            width: 100%;
+            width: 90%;
             padding: 5%;
+            display: flex;
+            justify-content: center;
         }
     
         @media @tablet {
@@ -101,12 +129,18 @@ body{
             display: flex;
             flex-direction: row;
             flex-wrap: wrap;
-            justify-content: space-around;
+            justify-content: space-evenly;
 
         .box{
             
             flex-direction: column;
             width: 20%;
+            text-decoration: none;
+            p{
+                a{
+                text-decoration: none;
+            }
+        }
             @media @tablet {
                 width: 80%;
                 justify-content: center;

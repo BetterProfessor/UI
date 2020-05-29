@@ -183,6 +183,16 @@ img {
   width: 100%;
   margin: 0 auto;
 }
+a {
+  color: #f5f5f5;
+  text-decoration: none;
+  opacity: 60%;
+  font-size: 1.8rem;
+}
+a:hover {
+  color: #60E96E;
+  opacity: 100%;
+}
 header {
   display: flex;
   justify-content: flex-start;
@@ -191,7 +201,7 @@ header {
   background-size: cover;
   width: 95%;
 }
-@media (max-width: 905px) {
+@media (max-width: 975px) {
   width: 100%;
   font-size: 2rem;
   justify-content: center;
@@ -224,7 +234,7 @@ header {
   padding: 2rem;
   text-align: left;
 }
-@media (max-width: 905px) {
+@media (max-width: 975px) {
   .logo {
     width: 100%;
     font-size: 2.8rem;
@@ -244,7 +254,7 @@ nav {
   padding: 2rem;
   font-size: 100%;
 }
-@media (max-width: 905px) {
+@media (max-width: 975px) {
   nav {
     margin-right: 0rem;
   }
@@ -291,6 +301,11 @@ nav a:hover {
   max-width: 100%;
   height: 50%;
 }
+@media (max-width: 975px) {
+  .hero .imgbig {
+    display: none;
+  }
+}
 @media (max-width: 500px) {
   .hero .imgbig {
     display: none;
@@ -299,11 +314,21 @@ nav a:hover {
 .hero .booksbg {
   justify-content: flex-end;
 }
+@media (max-width: 975px) {
+  .hero .booksbg {
+    margin: 0 auto;
+  }
+}
 .hero .booksbg .titles {
   display: flex;
   flex-direction: column;
   align-items: flex-end;
   width: 55%;
+}
+@media (max-width: 975px) {
+  .hero .booksbg .titles {
+    margin: 0 auto;
+  }
 }
 @media (max-width: 500px) {
   .hero .booksbg .titles {
@@ -327,6 +352,11 @@ nav a:hover {
 @media (max-width: 500px) {
   .hero .booksbg .buttons .signup {
     margin-left: 6rem;
+  }
+}
+@media (max-width: 975px) {
+  .hero .booksbg .buttons .signup {
+    margin-left: 20%;
   }
 }
 .hero .booksbg .buttons .login {
@@ -374,7 +404,7 @@ body h2 {
   width: 100%;
   text-align: center;
 }
-@media (max-width: 905px) {
+@media (max-width: 975px) {
   body h2 {
     width: 100%;
   }
@@ -393,14 +423,48 @@ body .What .Whattext {
   width: 40%;
   text-align: left;
 }
+@media (max-width: 975px) {
+  body .What .Whattext {
+    text-align: center;
+    width: 100%;
+    background-size: contain;
+  }
+}
 @media (max-width: 500px) {
   body .What .Whattext {
     width: 100%;
     flex-direction: column;
   }
 }
+@media (max-width: 975px) {
+  body .What .Whattext p {
+    text-align: left;
+  }
+}
+@media (max-width: 975px) {
+  body .What {
+    flex-direction: column;
+  }
+}
 @media (max-width: 500px) {
   body .What {
+    flex-direction: column;
+  }
+}
+body .bookIMG {
+  height: auto;
+  width: 40%;
+  padding: 5%;
+}
+@media (max-width: 975px) {
+  body .bookIMG {
+    flex-direction: column;
+    margin: 0 auto;
+    width: 80%;
+  }
+}
+@media (max-width: 500px) {
+  body .bookIMG {
     flex-direction: column;
   }
 }
@@ -411,10 +475,12 @@ body .About {
   flex-direction: column;
 }
 body .About img {
-  width: 100%;
+  width: 90%;
   padding: 5%;
+  display: flex;
+  justify-content: center;
 }
-@media (max-width: 905px) {
+@media (max-width: 975px) {
   body .About {
     flex-direction: column;
     justify-content: center;
@@ -441,7 +507,7 @@ body .About .boxes .box {
   flex-direction: column;
   width: 20%;
 }
-@media (max-width: 905px) {
+@media (max-width: 975px) {
   body .About .boxes .box {
     width: 80%;
     justify-content: center;
@@ -460,7 +526,50 @@ body .About .boxes .box h3 {
   font-size: 2.8rem;
   text-align: center;
 }
-@media (max-width: 905px) {
+@media (max-width: 975px) {
+  body .About .boxes .box h3 {
+    width: 100%;
+  }
+}
+@media (max-width: 500px) {
+  body .About .boxes .box h3 {
+    width: 100%;
+  }
+}
+body .About .boxes {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+body .About .boxes .box {
+  flex-direction: column;
+  width: 20%;
+  text-decoration: none;
+}
+body .About .boxes .box p a {
+  text-decoration: none;
+}
+@media (max-width: 975px) {
+  body .About .boxes .box {
+    width: 80%;
+    justify-content: center;
+    margin: 6rem;
+  }
+}
+@media (max-width: 500px) {
+  body .About .boxes .box {
+    width: 80%;
+    justify-content: center;
+    margin: 6rem;
+  }
+}
+body .About .boxes .box h3 {
+  padding: 4rem;
+  font-size: 2.8rem;
+  text-align: center;
+}
+@media (max-width: 975px) {
   body .About .boxes .box h3 {
     width: 100%;
   }

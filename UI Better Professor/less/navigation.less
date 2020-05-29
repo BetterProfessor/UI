@@ -115,7 +115,7 @@ nav {
     display: flex;
     justify-content: space-between;
     padding-top: 10rem;
-    background-image: url("..../IMG/heroimg.png");
+    background-image: url("../IMG/heroimg.png");
     background-repeat: no-repeat;
     background-size: cover;
     height: 500px;
@@ -124,18 +124,27 @@ nav {
         margin-left: 20%;
         max-width: 100%;
         height: 50%;
+        @media @tablet {
+            display: none;
+     }
         @media @mobile {
             display: none;
      }
     }
   .booksbg {
     justify-content: flex-end;
+    @media @tablet {
+       margin: 0 auto;
+    }
    
     .titles{
        display: flex;   
        flex-direction: column;
        align-items: flex-end;
        width: 55%;
+       @media @tablet{
+        margin: 0 auto;
+    }
        @media @mobile {
            width:60%;
            margin-left: 6rem;
@@ -151,6 +160,9 @@ nav {
                 
                  margin-left: 6rem;
                }
+               @media @tablet{
+                margin-left: 20%;
+            }
             }
 
          .login{ 
@@ -161,7 +173,7 @@ nav {
                    margin-left: 6rem;
                 }
            }
-
+         
            @media @mobile {
                display: flex;
                
