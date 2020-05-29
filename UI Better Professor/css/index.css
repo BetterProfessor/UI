@@ -547,6 +547,14 @@ body .About .boxes .box {
   width: 20%;
   text-decoration: none;
 }
+body .About .boxes .box img {
+  padding: 10%;
+  border-radius: 100%;
+}
+body .About .boxes .box p {
+  padding-bottom: 0;
+  padding-top: 0;
+}
 body .About .boxes .box p a {
   text-decoration: none;
 }
